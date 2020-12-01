@@ -2,7 +2,10 @@
 
 /**
  * {@link https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onInstalled
- * browser.runtime.onInstalled} based distribution.
+ * browser.runtime.onInstalled} based distribution.<br /><br />
+ *
+ * See {@link https://github.com/donbidon/browser-extension-distribution-example
+ * Self-distributed Google Chrome/Mozilla Firefox browsers extension}.
  *
  * @author {@link https://donbidon.rf.gd/ donbidon}
  * @license {@link https://opensource.org/licenses/mit-license.php MIT}

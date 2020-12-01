@@ -9,7 +9,8 @@
  */
 class Distribution {
     /**
-     * @param {Object} config
+     * @param {Object} config - See {@link https://github.com/donbidon/browser-extension-distribution-example
+     * Self-distributed Google Chrome/Mozilla Firefox browsers extension}
      */
     constructor(config) {
         /**
