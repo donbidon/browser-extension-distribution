@@ -69,11 +69,13 @@ class Distribution {
      */
     processResponse(response) {
         let callOnResponseReceived = true;
-        for (let update of response.updates) {
-            if (update.version > this.__version && "critical" === update.severity) {
-                callOnResponseReceived = false;
-                this.onUpgradeRequired(response, update);
-                break;
+        if ("undefined" !== typeof(response.updates)) {
+            for (let update of response.updates) {
+                if (update.version > this.__version && "critical" === update.severity) {
+                    callOnResponseReceived = false;
+                    this.onUpgradeRequired(response, update);
+                    break;
+                }
             }
         }
         if (callOnResponseReceived) {
